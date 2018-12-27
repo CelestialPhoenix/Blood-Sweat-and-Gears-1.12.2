@@ -1,0 +1,338 @@
+#Name: Blood Sweat & Gears Immersive Engineering Material Processing.zs
+#Author: PhoePhoe
+
+print("Trust me I'm an engineer");
+
+#name items
+
+var ingotAluminium=<gregtech:meta_item_1:10001>;
+var ingotBatteryAlloy=<gregtech:meta_item_1:10091>;
+var ingotBismuthBronze=<gregtech:meta_item_1:10230>;
+var ingotBrass=<gregtech:meta_item_1:10094>;
+var ingotBronze=<gregtech:meta_item_1:10095>;
+var ingotCobalt=<gregtech:meta_item_1:10017>;
+var ingotConstantan=<immersiveengineering:metal:6>;
+var ingotCopper=<gregtech:meta_item_1:10018>;
+var ingotCupronickel=<gregtech:meta_item_1:10109>;
+var ingotElectrum=<gregtech:meta_item_1:10112>;
+var ingotGold=<minecraft:gold_ingot>;
+var ingotInvar=<gregtech:meta_item_1:10126>;
+var ingotIron=<minecraft:iron_ingot>;
+var ingotLead=<gregtech:meta_item_1:10035>;
+var ingotNickel=<gregtech:meta_item_1:10044>;
+var ingotMagnalium=<gregtech:meta_item_1:10129>;
+var ingotManganese=<gregtech:meta_item_1:10039>;
+var ingotRedalloy=<gregtech:meta_item_1:10237>;
+var ingotRoseGold=<gregtech:meta_item_1:10228>;
+var ingotRubber=<gregtech:meta_item_1:10152>;
+var ingotSilver=<gregtech:meta_item_1:10062>;
+var ingotSolderingAlloy=<gregtech:meta_item_1:10180>;
+var ingotSteel=<gregtech:meta_item_1:10184>;
+var ingotSterlingSilver=<gregtech:meta_item_1:10227>;
+var ingotTin=<gregtech:meta_item_1:10071>;
+var ingotTinAlloy=<gregtech:meta_item_1:10189>;
+var ingotZinc=<gregtech:meta_item_1:10071>;
+
+var itemSlag=<thermalfoundation:material:864>;
+
+var nuggetAluminium=<gregtech:meta_item_1:9001>;
+var nuggetCobalt=<gregtech:meta_item_1:9017>;
+var nuggetCopper=<gregtech:meta_item_1:9018>;
+var nuggetIron=<gregtech:meta_item_1:9033>;
+var nuggetGold=<minecraft:gold_nugget>;
+var nuggetLead=<gregtech:meta_item_1:9035>;
+var nuggetNickel=<gregtech:meta_item_1:9044>;
+var nuggetSilver=<gregtech:meta_item_1:9062>;
+var nuggetTin=<gregtech:meta_item_1:9071>;
+var nuggetZinc=<gregtech:meta_item_1:9079>;
+
+var plateAluminium=<gregtech:meta_item_1:12001>;
+var plateBronze=<gregtech:meta_item_1:12095>;
+var plateConstantan=<minecraft:bedrock>;
+var plateCopper=<gregtech:meta_item_1:12018>;
+var plateElectrum=<gregtech:meta_item_1:12112>;
+var plateIron=<gregtech:meta_item_1:12033>;
+var plateGold=<gregtech:meta_item_1:12026>;
+var plateLead=<gregtech:meta_item_1:12035>;
+var plateNickel=<gregtech:meta_item_1:12044>;
+var plateSilver=<gregtech:meta_item_1:12062>;
+var plateSteel=<gregtech:meta_item_1:12184>;
+var plateUranium=<gregtech:meta_item_1:12075>;
+
+#---Alloy kiln---
+#mods.immersiveengineering.AlloySmelter.addRecipe(output, input, input, time);
+#mods.immersiveengineering.AlloySmelter.removeRecipe(output);
+
+#aluminium brass
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBrass*4, <ore:ingotAluminium>*3, <ore:ingotCopper>, 440);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBrass*4, <ore:dustAluminium>*3, <ore:ingotCopper>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBrass*4, <ore:ingotAluminium>*3, <ore:dustCopper>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBrass*4, <ore:dustAluminium>*3, <ore:dustCopper>, 360);
+#battery alloy
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBatteryAlloy*4, <ore:ingotLead>*3, <ore:ingotAntimony>, 440);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBatteryAlloy*4, <ore:ingotLead>*3, <ore:dustAntimony>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBatteryAlloy*4, <ore:dustLead>*3, <ore:ingotAntimony>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBatteryAlloy*4, <ore:dustLead>*3, <ore:dustAntimony>, 360);
+#bismuth bronze
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBismuthBronze*2, <ore:ingotBismuth>, <ore:ingotBrass>, 220);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBismuthBronze*2, <ore:dustBismuth>, <ore:ingotBrass>, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBismuthBronze*2, <ore:ingotBismuth>, <ore:dustBrass>, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBismuthBronze*2, <ore:dustBismuth>, <ore:dustBrass>, 180);
+#brass
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBrass*4, <ore:ingotCopper>*3, <ore:ingotZinc>, 440);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBrass*4, <ore:dustCopper>*3, <ore:ingotZinc>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBrass*4, <ore:ingotCopper>*3, <ore:dustZinc>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBrass*4, <ore:dustCopper>*3, <ore:dustZinc>, 360);
+#bronze
+mods.immersiveengineering.AlloySmelter.removeRecipe(<ic2:ingot:1>);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBronze*4, <ore:ingotCopper>*3, <ore:ingotTin>, 440);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBronze*4, <ore:dustCopper>*3, <ore:ingotTin>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBronze*4, <ore:ingotCopper>*3, <ore:dustTin>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotBronze*4, <ore:dustCopper>*3, <ore:dustTin>, 360);
+#constantan
+mods.immersiveengineering.AlloySmelter.removeRecipe(<immersiveengineering:metal:6>);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotConstantan*2, <ore:ingotCopper>, <ore:ingotNickel>, 220);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotConstantan*2, <ore:dustCopper>, <ore:ingotNickel>, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotConstantan*2, <ore:ingotCopper>, <ore:dustNickel>, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotConstantan*2, <ore:dustCopper>, <ore:dustNickel>, 180);
+#cupronickel
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotCupronickel*4, <ore:ingotCopper>*3, <ore:ingotNickel>, 440);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotCupronickel*4, <ore:dustCopper>*3, <ore:ingotNickel>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotCupronickel*4, <ore:ingotCopper>*3, <ore:dustNickel>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotCupronickel*4, <ore:dustCopper>*3, <ore:dustNickel>, 360);
+#electrum
+mods.immersiveengineering.AlloySmelter.removeRecipe(<immersiveengineering:metal:7>);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotElectrum*2, <ore:ingotGold>, <ore:ingotSilver>, 220);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotElectrum*2, <ore:dustGold>, <ore:ingotSilver>, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotElectrum*2, <ore:ingotGold>, <ore:dustSilver>, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotElectrum*2, <ore:dustGold>, <ore:dustSilver>, 180);
+#invar.
+#use the blast furnace. Noob ;)
+#magnalium
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotMagnalium*4, <ore:ingotMagnesium>, <ore:ingotAluminium>*2, 330);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotMagnalium*4, <ore:dustMagnesium>, <ore:ingotAluminium>*2, 300);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotMagnalium*4, <ore:ingotMagnesium>, <ore:dustAluminium>*2, 300);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotMagnalium*4, <ore:dustMagnesium>, <ore:dustAluminium>*2, 260);
+#redalloy
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotRedalloy*4, <ore:ingotCopper>, <ore:dustRedstone>*3, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotRedalloy*4, <ore:dustCopper>, <ore:dustRedstone>*3, 180);
+#rose gold
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotRoseGold*5, <ore:ingotGold>*4, <ore:ingotCopper>, 440);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotRoseGold*5, <ore:dustGold>*4, <ore:ingotCopper>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotRoseGold*5, <ore:ingotGold>*4, <ore:dustCopper>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotRoseGold*5, <ore:dustGold>*4, <ore:dustCopper>, 360);
+#rubber
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotRubber*2, <ore:ballRubber>*3, <ore:dustSulphur>, 200);
+#soldering alloy
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotSolderingAlloy*10, <ore:ingotTin>*9, <ore:ingotAntimony>, 1100);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotSolderingAlloy*10, <ore:dustTin>*9, <ore:ingotAntimony>, 1000);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotSolderingAlloy*10, <ore:ingotTin>*9, <ore:dustAntimony>, 1000);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotSolderingAlloy*10, <ore:dustTin>*9, <ore:dustAntimony>, 900);
+#sterling silver
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotSterlingSilver*5, <ore:ingotSilver>*4, <ore:ingotCopper>, 440);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotSterlingSilver*5, <ore:dustSilver>*4, <ore:ingotCopper>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotSterlingSilver*5, <ore:ingotSilver>*4, <ore:dustCopper>, 400);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotSterlingSilver*5, <ore:dustSilver>*4, <ore:dustCopper>, 360);
+#tin alloy
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotTinAlloy*2, <ore:ingotTin>, <ore:ingotIron>, 220);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotTinAlloy*2, <ore:dustTin>, <ore:ingotIron>, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotTinAlloy*2, <ore:ingotTin>, <ore:dustIron>, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(ingotTinAlloy*2, <ore:dustTin>, <ore:dustInvar>, 180);
+
+#---Blast furnace---
+#--mods.immersiveengineering.BlastFurnace.addRecipe(output, input, 2000);
+#--mods.immersiveengineering.BlastFurnace.addRecipe(output, input, 2000, byproduct/slag);
+#--mods.immersiveengineering.BlastFurnace.removeRecipe(output);
+
+#Invar
+#Heres your recipe. (still a noob mind)
+mods.immersiveengineering.BlastFurnace.addRecipe(ingotInvar, <ore:dustInvar>, 2000);
+
+#Steel
+mods.immersiveengineering.BlastFurnace.removeRecipe(ingotSteel);
+mods.immersiveengineering.BlastFurnace.addRecipe(ingotSteel, <ore:ingotIron>, 1200, itemSlag);
+mods.immersiveengineering.BlastFurnace.addRecipe(ingotSteel*9, <ore:blockIron>, 10000, itemSlag*9);
+mods.immersiveengineering.BlastFurnace.addRecipe(ingotSteel, <ore:dustIron>, 1000, ingotSteel);
+mods.immersiveengineering.BlastFurnace.addRecipe(ingotSteel, <ore:dustSteel>, 600);
+
+#---Bottling Plant---
+#mods.immersiveengineering.BottlingMachine.addRecipe(<output>, <input>, <liquid:input>*amount);
+
+#Gearbox filling
+mods.immersiveengineering.BottlingMachine.addRecipe(<contenttweaker:gearboxsteel>, <contenttweaker:gearboxemptysteel>, <liquid:lubricant>*1000);
+mods.immersiveengineering.BottlingMachine.addRecipe(<contenttweaker:gearboxaluminium>, <contenttweaker:gearboxemptyaluminium>, <liquid:lubricant>*2000);
+mods.immersiveengineering.BottlingMachine.addRecipe(<contenttweaker:gearboxstainless>, <contenttweaker:gearboxemptystainless>, <liquid:lubricant>*4000);
+mods.immersiveengineering.BottlingMachine.addRecipe(<contenttweaker:gearboxtitanium>, <contenttweaker:gearboxemptytitanium>, <liquid:lubricant>*8000);
+mods.immersiveengineering.BottlingMachine.addRecipe(<contenttweaker:gearboxtungstensteel>, <contenttweaker:gearboxemptytungstensteel>, <liquid:lubricant>*16000);
+
+#mods.immersiveengineering.BottlingMachine.addRecipe(<contenttweaker:gearboxsteel>, <contenttweaker:gearboxemptysteel>, <liquid:gearboxoil>*1000);
+#mods.immersiveengineering.BottlingMachine.addRecipe(<contenttweaker:gearboxaluminium>, <contenttweaker:gearboxemptyaluminium>, <liquid:gearboxoil>*2000);
+#mods.immersiveengineering.BottlingMachine.addRecipe(<contenttweaker:gearboxstainless>, <contenttweaker:gearboxemptystainless>, <liquid:gearboxoil>*4000);
+#mods.immersiveengineering.BottlingMachine.addRecipe(<contenttweaker:gearboxtitanium>, <contenttweaker:gearboxemptytitanium>, <liquid:gearboxoil>*8000);
+#mods.immersiveengineering.BottlingMachine.addRecipe(<contenttweaker:gearboxtungstensteel>, <contenttweaker:gearboxemptytungstensteel>, <liquid:gearboxoil>*16000);
+
+#---Metal Press---
+#removed recipes
+#IC2 plates [plate mould]
+mods.immersiveengineering.MetalPress.removeRecipe(<ic2:plate:*>); #generic plates
+mods.immersiveengineering.MetalPress.removeRecipe(<ic2:crafting:4>); #iridium alloy plate
+#Thermal foundation plates/gears see Thermal Foundation Materials.zs
+
+#cutting (log splitting)
+#abyssalcraft
+mods.immersiveengineering.MetalPress.addRecipe(<abyssalcraft:dltplank>*4, <abyssalcraft:dltlog>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<abyssalcraft:dreadplanks>*4, <abyssalcraft:dreadlog>, <contenttweaker:presstoolcutter>, 2000, 1);
+#biomes'o'plenty
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:0>*4, <biomesoplenty:log_0:4>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:1>*4, <biomesoplenty:log_0:5>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:2>*4, <biomesoplenty:log_0:6>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:3>*4, <biomesoplenty:log_0:7>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:4>*4, <biomesoplenty:log_1:4>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:5>*4, <biomesoplenty:log_1:5>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:6>*4, <biomesoplenty:log_1:6>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:7>*4, <biomesoplenty:log_1:7>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:8>*4, <biomesoplenty:log_2:4>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:9>*4, <biomesoplenty:log_2:5>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:10>*4, <biomesoplenty:log_2:6>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:11>*4, <biomesoplenty:log_2:7>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:12>*4, <biomesoplenty:log_3:4>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:12>*4, <biomesoplenty:log_3:5>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:14>*4, <biomesoplenty:log_3:6>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<biomesoplenty:planks_0:15>*4, <biomesoplenty:log_3:7>, <contenttweaker:presstoolcutter>, 2000, 1);
+#forestry
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:0>*4, <forestry:logs.0:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:1>*4, <forestry:logs.0:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:2>*4, <forestry:logs.0:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:3>*4, <forestry:logs.0:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:4>*4, <forestry:logs.1:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:5>*4, <forestry:logs.1:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:6>*4, <forestry:logs.1:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:7>*4, <forestry:logs.1:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:8>*4, <forestry:logs.2:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:9>*4, <forestry:logs.2:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:10>*4, <forestry:logs.2:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:11>*4, <forestry:logs.2:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:12>*4, <forestry:logs.3:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:13>*4, <forestry:logs.3:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:14>*4, <forestry:logs.3:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.0:15>*4, <forestry:logs.3:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:1>*4, <forestry:logs.4:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:2>*4, <forestry:logs.4:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:3>*4, <forestry:logs.4:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:4>*4, <forestry:logs.4:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:5>*4, <forestry:logs.5:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:6>*4, <forestry:logs.5:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:7>*4, <forestry:logs.5:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:8>*4, <forestry:logs.5:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:9>*4, <forestry:logs.6:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:10>*4, <forestry:logs.6:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:11>*4, <forestry:logs.6:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:12>*4, <forestry:logs.6:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.1:13>*4, <forestry:logs.7:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+#forestry fireproof
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:0>*4, <forestry:logs.fireproof.0:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:1>*4, <forestry:logs.fireproof.0:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:2>*4, <forestry:logs.fireproof.0:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:3>*4, <forestry:logs.fireproof.0:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:4>*4, <forestry:logs.fireproof.1:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:5>*4, <forestry:logs.fireproof.1:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:6>*4, <forestry:logs.fireproof.1:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:7>*4, <forestry:logs.fireproof.1:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:8>*4, <forestry:logs.fireproof.2:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:9>*4, <forestry:logs.fireproof.2:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:10>*4, <forestry:logs.fireproof.2:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:11>*4, <forestry:logs.fireproof.2:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:12>*4, <forestry:logs.fireproof.3:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:13>*4, <forestry:logs.fireproof.3:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:14>*4, <forestry:logs.fireproof.3:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.0:15>*4, <forestry:logs.fireproof.3:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:1>*4, <forestry:logs.fireproof.4:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:2>*4, <forestry:logs.fireproof.4:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:3>*4, <forestry:logs.fireproof.4:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:4>*4, <forestry:logs.fireproof.4:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:5>*4, <forestry:logs.fireproof.5:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:6>*4, <forestry:logs.fireproof.5:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:7>*4, <forestry:logs.fireproof.5:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:8>*4, <forestry:logs.fireproof.5:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:9>*4, <forestry:logs.fireproof.6:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:10>*4, <forestry:logs.fireproof.6:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:11>*4, <forestry:logs.fireproof.6:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:12>*4, <forestry:logs.fireproof.6:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.fireproof.1:13>*4, <forestry:logs.fireproof.7:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+#forestry vanilla fireproof
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.vanilla.fireproof.0:0>*4, <forestry:logs.vanilla.fireproof.0:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.vanilla.fireproof.0:1>*4, <forestry:logs.vanilla.fireproof.0:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.vanilla.fireproof.0:2>*4, <forestry:logs.vanilla.fireproof.0:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.vanilla.fireproof.0:3>*4, <forestry:logs.vanilla.fireproof.0:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.vanilla.fireproof.0:4>*4, <forestry:logs.vanilla.fireproof.0:4>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<forestry:planks.vanilla.fireproof.0:5>*4, <forestry:logs.vanilla.fireproof.0:5>, <contenttweaker:presstoolcutter>, 2000, 1);
+#ic2
+mods.immersiveengineering.MetalPress.addRecipe(<minecraft:planks:3>*3, <ic2:rubber_wood>, <contenttweaker:presstoolcutter>, 2000, 1);
+#natura
+mods.immersiveengineering.MetalPress.addRecipe(<natura:overworld_planks:0>*4, <natura:overworld_logs:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:overworld_planks:1>*4, <natura:overworld_logs:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:overworld_planks:2>*4, <natura:overworld_logs:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:overworld_planks:3>*4, <natura:overworld_logs:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:overworld_planks:4>*4, <natura:overworld_logs2:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:overworld_planks:5>*4, <natura:overworld_logs2:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:overworld_planks:6>*4, <natura:overworld_logs2:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:overworld_planks:7>*4, <natura:overworld_logs2:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:overworld_planks:8>*4, <natura:redwood_logs:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:nether_planks:0>*4, <natura:nether_logs:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:nether_planks:2>*4, <natura:nether_logs:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:nether_planks:3>*4, <natura:nether_logs:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<natura:nether_planks:1>*4, <natura:nether_logs2:*>, <contenttweaker:presstoolcutter>, 2000, 1);
+#vanilla
+mods.immersiveengineering.MetalPress.addRecipe(<minecraft:planks:0>*4, <minecraft:log:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<minecraft:planks:1>*4, <minecraft:log:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<minecraft:planks:2>*4, <minecraft:log:2>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<minecraft:planks:3>*4, <minecraft:log:3>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<minecraft:planks:4>*4, <minecraft:log2:0>, <contenttweaker:presstoolcutter>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<minecraft:planks:5>*4, <minecraft:log2:1>, <contenttweaker:presstoolcutter>, 2000, 1);
+
+#---gear mould---
+
+#---plate mould---
+
+#---ring bending---
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:meta_item_1:18001>, <gregtech:meta_item_1:14001>, <contenttweaker:presstoolringbender>, 2000, 1); #Aluminium
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:meta_item_1:18033>, <gregtech:meta_item_1:14033>, <contenttweaker:presstoolringbender>, 2000, 1); #Iron
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:meta_item_1:18071>, <gregtech:meta_item_1:14071>, <contenttweaker:presstoolringbender>, 2000, 1); #Tin
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:meta_item_1:18094>, <gregtech:meta_item_1:14094>, <contenttweaker:presstoolringbender>, 2000, 1); #Brass
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:meta_item_1:18095>, <gregtech:meta_item_1:14095>, <contenttweaker:presstoolringbender>, 2000, 1); #Bronze
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:meta_item_1:18126>, <gregtech:meta_item_1:14126>, <contenttweaker:presstoolringbender>, 2000, 1); #Invar
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:meta_item_1:18184>, <gregtech:meta_item_1:14184>, <contenttweaker:presstoolringbender>, 2000, 1); #Steel
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:meta_item_1:18197>, <gregtech:meta_item_1:14197>, <contenttweaker:presstoolringbender>, 2000, 1); #Wrought Iron
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:meta_item_1:18298>, <gregtech:meta_item_1:14298>, <contenttweaker:presstoolringbender>, 2000, 1); #Magnetic Steel
+
+#---rolling (cable)---
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_soldering_alloy>, <gregtech:meta_item_1:14180>, <contenttweaker:presstoolroller>, 2000, 1);
+#-----mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_cobalt>, <gregtech:meta_item_1:14>, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_gold>, <gregtech:meta_item_1:14026>, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_nickel>, <gregtech:meta_item_1:14109>, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_copper>, <gregtech:meta_item_1:14018>, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_cupronickel>, <gregtech:meta_item_1:14109>, <contenttweaker:presstoolroller>, 2000, 1);
+#-----mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_red_alloy>, <gregtech:meta_item_1:14>, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_silver>, <gregtech:meta_item_1:14062>, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_tin>, <gregtech:meta_item_1:14071>, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_iron>, <gregtech:meta_item_1:14033>, <contenttweaker:presstoolroller>, 2000, 1);
+#-----mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_zinc>, <gregtech:meta_item_1:14>, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_lead>, <gregtech:meta_item_1:14035>, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_electrum>, <gregtech:meta_item_1:14112>, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<gregtech:cable_steel>, <gregtech:meta_item_1:14184>, <contenttweaker:presstoolroller>, 2000, 1);
+#---rolling (plates)---
+#mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:plate>, <thermalfoundation:material:X>, <contenttweaker:presstoolroller>, 2000, 1);
+
+#---rolling (sheetmetal)---
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rolledaluminium>, plateAluminium, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rolledbronze>, plateBronze, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rolledconstantan>, plateConstantan, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rolledcopper>, plateCopper, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rolledelectrum>, plateElectrum, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rolledgold>, plateGold, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rollediron>, plateIron, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rolledlead>, plateLead, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rollednickel>, plateNickel, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rolledsilver>, plateSilver, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rolledsteel>, plateSteel, <contenttweaker:presstoolroller>, 2000, 1);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rolleduranium>, <gregtech:meta_item_1:12075>, <contenttweaker:presstoolroller>, 2000, 1);
