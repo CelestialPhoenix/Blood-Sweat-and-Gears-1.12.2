@@ -33,10 +33,10 @@
                "minecraft:brown_mushroom",
                "minecraft:red_mushroom",
                "minecraft:lava",
-			   "minecraft:iron_ore",
-			   "minecraft:coal_ore",
-			   "minecraft:sandstone",
-			   "minecraft:red_sandstone"
+               "minecraft:iron_ore",
+               "minecraft:coal_ore",
+               "minecraft:sandstone",
+               "minecraft:red_sandstone"
             ],
             "min-height":32,
             "height-variance":48,
@@ -53,7 +53,6 @@
          "vertical-density":48,
          "horizontal-density":90,
          "dimension":{  
-            "restriction":"blacklist",
             "restriction":"whitelist",
             "value":[  
                0
