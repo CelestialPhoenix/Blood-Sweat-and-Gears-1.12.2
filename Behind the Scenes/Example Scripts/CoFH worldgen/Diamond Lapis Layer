@@ -1,6 +1,6 @@
 {  
    "populate":{  
-      "Salts2":{  
+      "Diamond-Lapis Layer":{  
          "distribution":"fractal",
          "generator":[  
             {  
@@ -8,34 +8,24 @@
                "weight":70,
                "block":[  
                   {  
-                     "name":"contenttweaker:oreabyssalsalt",
+                     "name":"minecraft:iron_ore",
                      "metadata":0,
                      "weight":30
                   },
                   {  
-                     "name":"contenttweaker:oreabyssalrocksalt",
+                     "name":"minecraft:gold_ore",
                      "metadata":0,
                      "weight":30
                   },
                   {  
-                     "name":"abyssalcraft:stone",
-                     "metadata":1,
+                     "name":"minecraft:stone",
+                     "metadata":0,
                      "weight":60
                   }
                ],
                "material":[  
                   {  
-                     "name":"abyssalcraft:stone",
-                     "metadata":1,
-                     "weight":85
-                  },
-                  {  
-                     "name":"contenttweaker:oreabyssalrocksalt",
-                     "metadata":0,
-                     "weight":85
-                  },
-                  {  
-                     "name":"contenttweaker:oreabyssalsalt",
+                     "name":"minecraft:stone",
                      "metadata":0,
                      "weight":85
                   }
@@ -47,34 +37,34 @@
                "weight":2,
                "block":[  
                   {  
-                     "name":"contenttweaker:oreabyssallepidolite",
+                     "name":"minecraft:diamond_ore",
                      "metadata":0,
                      "weight":50
                   },
                   {  
-                     "name":"contenttweaker:oreabyssalspodumene",
+                     "name":"minecraft:gold_ore",
                      "metadata":0,
                      "weight":5
                   },
                   {  
-                     "name":"contenttweaker:oreabyssalsalt",
+                     "name":"minecraft:iron_ore",
                      "metadata":0,
                      "weight":5
                   },
                   {  
-                     "name":"contenttweaker:oreabyssalrocksalt",
+                     "name":"minecraft:stone",
                      "metadata":0,
                      "weight":5
                   }
                ],
                "material":[  
                   {  
-                     "name":"contenttweaker:oreabyssalrocksalt",
+                     "name":"minecraft:gold_ore",
                      "metadata":0,
                      "weight":85
                   },
                   {  
-                     "name":"contenttweaker:oreabyssalsalt",
+                     "name":"minecraft:iron_ore",
                      "metadata":0,
                      "weight":85
                   }
@@ -88,34 +78,34 @@
                "weight":2,
                "block":[  
                   {  
-                     "name":"contenttweaker:oreabyssallepidolite",
+                     "name":"minecraft:gold_ore",
                      "metadata":0,
                      "weight":5
                   },
                   {  
-                     "name":"contenttweaker:oreabyssalspodumene",
+                     "name":"minecraft:lapis_ore",
                      "metadata":0,
                      "weight":50
                   },
                   {  
-                     "name":"contenttweaker:oreabyssalsalt",
+                     "name":"minecraft:iron_ore",
                      "metadata":0,
                      "weight":5
                   },
                   {  
-                     "name":"contenttweaker:oreabyssalrocksalt",
+                     "name":"minecraft:diamond_ore",
                      "metadata":0,
                      "weight":5
                   }
                ],
                "material":[  
                   {  
-                     "name":"contenttweaker:oreabyssalrocksalt",
+                     "name":"minecraft:gold_ore",
                      "metadata":0,
                      "weight":85
                   },
                   {  
-                     "name":"contenttweaker:oreabyssalsalt",
+                     "name":"minecraft:iron_ore",
                      "metadata":0,
                      "weight":85
                   }
@@ -136,7 +126,7 @@
          "dimension":{  
             "restriction":"whitelist",
             "value":[  
-               50
+               0
             ]
          }
       }
