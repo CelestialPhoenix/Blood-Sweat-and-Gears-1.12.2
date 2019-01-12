@@ -1,0 +1,62 @@
+tile.contenttweaker.gearboxemptyaluminium.name=Empty Gearbox
+tile.contenttweaker.gearboxemptystainless.name=Empty Gearbox
+tile.contenttweaker.gearboxemptysteel.name=Empty Gearbox
+tile.contenttweaker.gearboxemptytitanium.name=Empty Gearbox
+tile.contenttweaker.gearboxemptytungstensteel.name=Empty Gearbox
+
+tile.contenttweaker.hullaluminium.name=Machine Hull II
+tile.contenttweaker.hullbronze.name=Bronze Machine Hull
+tile.contenttweaker.hullstainless.name=Machine Hull III
+tile.contenttweaker.hullsteel.name=Machine Hull 
+tile.contenttweaker.hulltitanium.name=Machine Hull IV
+tile.contenttweaker.hulltungstensteel.name=Machine Hull V
+
+tile.contenttweaker.motoraluminium.name=External Motor II
+tile.contenttweaker.motorstainless.name=External Motor III
+tile.contenttweaker.motorsteel.name=External Motor
+tile.contenttweaker.motortitanium.name=External Motor IV
+tile.contenttweaker.motortungstensteel.name= External Motor V
+
+tile.contenttweaker.castraw.name=Raw Casting Medium
+tile.contenttweaker.casthard.name=Hardened Casting Medium
+tile.contenttweaker.mouldhull.name= Machine Hull Mould
+tile.contenttweaker.mouldrods.name=Rods Mould
+tile.contenttweaker.mouldrings.name=Rings Mould
+
+item.contenttweaker.blastbrick.name=Infernal Brick
+
+item.contenttweaker.boardcrude.name= Crude Circuit Board
+item.contenttweaker.boardsimple.name= Simple Circuit Board
+
+item.contenttweaker.itemcasingaluminium.name=Aluminium Item Casing
+item.contenttweaker.itemcasingchrome.name=Chrome Item Casing
+item.contenttweaker.itemcasingiridium.name=Iridium Item Casing
+
+item.contenttweaker.circuitgood.name=Good Circuit
+
+item.contenttweaker.clusteraluminium.name=Native Aluminium Cluster
+item.contenttweaker.clusterantimony.name=Native Antimony Cluster
+item.contenttweaker.clusterberyllium.name=Native Beryllium Cluster
+item.contenttweaker.clustercobalt.name=Native Cobalt Cluster
+item.contenttweaker.clusterlithium.name=Native Lithium Cluster
+item.contenttweaker.clustermagnesium.name=Native Magnesium Cluster
+item.contenttweaker.clustermanganese.name=Native Manganese Cluster
+item.contenttweaker.clustermolybdenum.name=Native Molybdenum Cluster
+item.contenttweaker.clusternickel.name=Native Nickel Cluster
+item.contenttweaker.clusterplatinum.name=Native Platinum Cluster
+item.contenttweaker.clusterpotassium.name=Native Potassium Cluster
+item.contenttweaker.clusterquicksilver.name=Native Quicksilver Cluster
+item.contenttweaker.clustersodium.name=Native Sodium Cluster
+item.contenttweaker.clustertantalum.name=Native Tantalum Cluster
+item.contenttweaker.clustertitanium.name=Native Titanium Cluster
+item.contenttweaker.clusterthorium.name=Native Thorium Cluster
+item.contenttweaker.clustertungsten.name=Native Tungsten Cluster
+item.contenttweaker.clusteruranium.name=Native Uranium Cluster
+item.contenttweaker.clusterzinc.name=Native Zinc Cluster
+item.contenttweaker.clusterzirconium.name=Native Zirconium Cluster
+
+item.contenttweaker.coillv.name=Coil
+item.contenttweaker.coilmv.name=Coil II
+item.contenttweaker.coilhv.name=Coil III
+item.contenttweaker.coilev.name=Coil IV
+item.contenttweaker.coiliv.name=Coil V
