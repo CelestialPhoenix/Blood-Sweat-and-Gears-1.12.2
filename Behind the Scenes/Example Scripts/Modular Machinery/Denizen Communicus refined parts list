@@ -69,7 +69,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "minecraft:portal@2"
+                "minecraft:portal"
             ]
         },
         {
@@ -85,7 +85,7 @@
             "y": 0,
             "z": 3,
             "elements": [
-                "minecraft:portal@2"
+                "minecraft:portal"
             ]
         },
         {
@@ -157,7 +157,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "minecraft:portal@2"
+                "minecraft:portal"
             ]
         },
         {
@@ -173,7 +173,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "minecraft:portal@2"
+                "minecraft:portal"
             ]
         },
         {
@@ -197,7 +197,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "minecraft:portal@2"
+                "minecraft:portal"
             ]
         },
         {
@@ -213,7 +213,7 @@
             "y": -1,
             "z": 3,
             "elements": [
-                "minecraft:portal@2"
+                "minecraft:portal"
             ]
         },
         {
